@@ -8,6 +8,13 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
 
+        //Game Controller component
+        gameController = GetComponent<GameController>();
+        //Speed for the game is at a playing state
+        Time.timeScale = 1;
+        rb = GetComponent<Rigidbody2D>();
+        //Object Height equals the size of the height of the sprite
+        objectHeight = transform.GetComponents<SpriteRenderer>().bounds.size.y / 2;
     }
 
     // Update is called once per frame
