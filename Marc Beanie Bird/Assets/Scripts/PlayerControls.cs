@@ -7,6 +7,7 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         //Game Controller component
         gameController = GetComponent<GameController>();
         //Speed for the game is at playing state
@@ -14,6 +15,16 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //Object Height equals the size of the height of the sprite
         objectHeight = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
+=======
+
+        //Game Controller component
+        gameController = GetComponent<GameController>();
+        //Speed for the game is at a playing state
+        Time.timeScale = 1;
+        rb = GetComponent<Rigidbody2D>();
+        //Object Height equals the size of the height of the sprite
+        objectHeight = transform.GetComponents<SpriteRenderer>().bounds.size.y / 2;
+>>>>>>> 383baaa7a217841ae386541d24e14bec35c40732
     }
 
     // Update is called once per frame
