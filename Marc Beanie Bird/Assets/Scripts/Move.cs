@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    [Header("Default Speed")]
-    public float speed;
-    // Start is called before the first frame update
 
+    public float speed; 
 
-    // Update is called once per frame
+    void Start()
+    {
+       
+    }
+
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
