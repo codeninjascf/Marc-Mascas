@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-
     public float speed; 
 
-    void Start()
-    {
-       
-    }
 
     void Update()
     {
