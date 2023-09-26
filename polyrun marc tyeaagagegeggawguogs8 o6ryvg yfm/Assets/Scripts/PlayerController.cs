@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 25f;
 
     private bool _isGrounded;
-    private Rigidbody2D _rigidbody
+    private Rigidbody2D _rigidbody;
 
         void Start()
     {
@@ -40,15 +40,20 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.EndGame();
         }
-    }
-
-    void OnCollisionStay2D(Collision2D other)
-    {
         if (other.gameObject.CompareTag("Ground"))
         {
             _isGrounded = true;
         }
     }
-
     void OnCollisionExit2D(Collision2D other)
+    {
+
+    }
+    void OnCollisionStay2D(Collision2D other)
+    {
+
+    }
+
 }
+   
+    
