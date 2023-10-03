@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 25f;
@@ -45,15 +44,29 @@ public class PlayerController : MonoBehaviour
             _isGrounded = true;
         }
     }
-    void OnCollisionExit2D(Collision2D other)
-    {
-
-    }
     void OnCollisionStay2D(Collision2D other)
     {
-
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            _isGrounded = true;
+        }
     }
-
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            _isGrounded = false;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            GameManager.Score += 25;
+            other.gameObject.SetActive(false);
+        }
+    }
 }
+
    
     
