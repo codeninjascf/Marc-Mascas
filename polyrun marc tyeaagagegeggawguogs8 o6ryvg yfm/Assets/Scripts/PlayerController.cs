@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            if (PlayerCollisions.CollideWithSide(gameObject, other.gameObject, PlayerCollision.Side.Bottom))
+            if (PlayerCollisions.CollidedWithSide(gameObject, other.gameObject, PlayerCollisions.Side.Bottom))
             {
                 _isGrounded = true;
             }
