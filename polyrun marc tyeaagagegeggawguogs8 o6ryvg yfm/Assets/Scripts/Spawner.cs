@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
         // Start is called before the first frame update
     void Start()
     {
-        _activeObjects = new List<GameObject>();
+        _activeObject = new List<GameObject>();
         StartCoroutine(Spawn());
     }
 
@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         Vector3 movement = objectSpeed * Time.deltaTime * Vector3.left;
-        foreach (GameObject activeObject in _activeObjects)
+        foreach (GameObject activeObject in _activeObject)
         {
             activeObject.transform.position += movement;
         }
@@ -27,12 +27,12 @@ public class Spawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        GameManager.UpdateList(_activeObjects);
+        GameManager.UpdateList(_activeObject);
 
         GameObject challengeObject = Instantiate(GameManager.GetChallengeObject());
         challengeObject.transform.position = new Vector3(GameManager.ScreenBounds.x, 0);
-        _activeObjects.Add(challengeObject);
-        challengeObject script = challengeObject.GetComponent<challengeObject>();
+        _activeObject.Add(challengeObject);
+        ChallengeObject script = challengeObject.GetComponent<ChallengeObject>();
 
 
         yield return new WaitForSeconds(script.challengeTime);
