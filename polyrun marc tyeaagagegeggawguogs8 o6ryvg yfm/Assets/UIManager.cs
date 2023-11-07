@@ -24,11 +24,40 @@ public class UIManager : MonoBehaviour
         gameOverMenu.SetActive(false);
 
         _gameOver = false;
+        _highScore = PlayerPrefs.GetInt("HighScore", 0);
     }
 
-    
     void Update()
     {
-        
+        scoreText.text = GameManager.Score.ToString();
+
+        if (!_gameOver && GameManager.GameOver)
+        {
+            _gameOver = true;
+            scoreText.gameObject.SetActive(false);
+            gameOverMenu.SetActive(true);
+
+
+            if (GameManager.Score > _highScore)
+            {
+                _highScore = GameManager.Score;
+                PlayerPrefs.SetInt("HighScore", _highScore);
+            }
+            
+            gameOverScoreText.text = "Score: " + GameManager.Score;
+            gameOverHighScoreText.text = "High Score: " + _highScore;
+        }
+    }
+    public void StartGame()
+    {
+        mainMenu.SetActive(false);
+        scoreText.gameObject.SetActive(true);
+        GameManager.StartGame();
+    }
+
+
+    public void RestartGame()
+    {
+        Scenemanager.LoadScene(0);   
     }
 }
