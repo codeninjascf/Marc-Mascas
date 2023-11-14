@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -58,6 +58,6 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Scenemanager.LoadScene(0);   
+        SceneManager.LoadScene(0);   
     }
 }
