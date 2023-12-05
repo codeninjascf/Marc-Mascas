@@ -902,9 +902,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.8841678, y: 2.9240863, z: -4.260294}
+    m_Target: {x: -4.0954814, y: 2.1526284, z: -4.240023}
     speed: 2
-    m_Value: {x: -1.8001243, y: 2.8903484, z: -4.2623816}
+    m_Value: {x: -4.0954814, y: 2.1526284, z: -4.240023}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -954,9 +954,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.430207
+    m_Target: 2.4031706
     speed: 2
-    m_Value: 4.63896
+    m_Value: 2.4031706
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1001,9 +1001,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 383.2
+    x: 381.6
     y: 73.6
-    width: 1175.6001
+    width: 1177.2001
     height: 580.6
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1175.6001, y: 559.6}
+  m_TargetSize: {x: 1177.2001, y: 559.6}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1036,8 +1036,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -470.24005
-    m_HBaseRangeMax: 470.24005
+    m_HBaseRangeMin: -470.88004
+    m_HBaseRangeMax: 470.88004
     m_VBaseRangeMin: -223.84
     m_VBaseRangeMax: 223.84
     m_HAllowExceedBaseRangeMin: 1
@@ -1057,23 +1057,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1175.6001
+      width: 1177.2001
       height: 559.6
     m_Scale: {x: 5, y: 5}
-    m_Translation: {x: 1009.65204, y: 774.4269}
+    m_Translation: {x: 1010.452, y: 774.4269}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -201.9304
+      x: -202.09041
       y: -154.88538
-      width: 235.12003
+      width: 235.44002
       height: 111.92
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1469.5001, y: 725.75}
+  m_LastWindowPixelSize: {x: 1471.5001, y: 725.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
