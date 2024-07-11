@@ -373,9 +373,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 20
-  crosshair: {fileID: 0}
-  bulletStart: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  crosshair: {fileID: 2013691465}
+  bulletStart: {fileID: 551816166}
+  bulletPrefab: {fileID: 106756398545683830, guid: 40b7be0ce11beaa48bd7f0e3d3eaa32b, type: 3}
 --- !u!1 &529818351
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +511,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529818351}
   m_CullTransparentMesh: 1
+--- !u!1 &551816166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1275642260383887277, guid: bdde90feb5bfa6647a873f8afee9ed6d, type: 3}
+  m_PrefabInstance: {fileID: 466283802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806838785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -984,6 +989,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942539456}
   m_CullTransparentMesh: 1
+--- !u!1 &2013691465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 781141947717642194, guid: e54bb41ba49fc0b42992c848cd0b5431, type: 3}
+  m_PrefabInstance: {fileID: 141894423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2067092336
 GameObject:
   m_ObjectHideFlags: 0
