@@ -2978,7 +2978,7 @@ GameObject:
   - component: {fileID: 6294696021041013540}
   - component: {fileID: 9162547089016919767}
   - component: {fileID: 1149558810}
-  - component: {fileID: 8329747875464190954}
+  - component: {fileID: 8978267952645724703}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3111,7 +3111,7 @@ MonoBehaviour:
   xBoundaries: {x: -24, y: 24}
   zBoundaries: {x: -2.2, y: 2.2}
   maxComboDelay: 0.5
---- !u!114 &8329747875464190954
+--- !u!114 &8978267952645724703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3124,7 +3124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  deathParticles: {fileID: 0}
+  deathParticles: {fileID: 469618944626369992, guid: 3ba1c4ab1be9f7a4c9ba21c724a792e9, type: 3}
 --- !u!1 &2808912906764303474
 GameObject:
   m_ObjectHideFlags: 0
