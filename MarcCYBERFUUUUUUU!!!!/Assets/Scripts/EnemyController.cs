@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         _player = GameManager.Player;
         _animator = GetComponent<Animator>();
-        _rigidbody = GetComponent<_rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
 
         _state = EnemyState.Following;
     }
